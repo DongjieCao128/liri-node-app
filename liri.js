@@ -53,8 +53,8 @@ function concert() {
 
 
 
-function song(x) {
-    spotify.search({ type: 'track', query: x, limit: 1 }, function (err, data) {
+function song() {
+    spotify.search({ type: 'track', query: search, limit: 1 }, function (err, data) {
 
 
         console.log("artist name: " + data.tracks.items[0].album.artists[0].name);
